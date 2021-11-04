@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:src="@drawable/applogo"></ImageView>
+        android:src="@drawable/applogo"/>
     
     <TextView
         android:id="@+id/app_slogan"
@@ -28,38 +28,37 @@
         android:textColor="@color/design_default_color_primary"
         android:textSize="22sp"
         android:textStyle="bold|italic"
-        ></TextView>
+       />
 
     <Button
         android:id="@+id/main_login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/buttons"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_design"
+        app:backgroundTint="@android:color/transparent"
         android:padding="20dp"
+        android:text="Already have an Account? Login"
         android:textAllCaps="false"
-        android:textSize="18sp"
-        android:text = "Already have an Account? Login"
         android:textColor="@color/white"
-        ></Button>
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/main_join_now_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/main_login_btn"
-        android:layout_marginBottom="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/input_design"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttons"
         android:padding="20dp"
+        android:text="Join Now"
         android:textAllCaps="false"
-        android:textSize="18sp"
-        android:text = "Join Now"
         android:textColor="@color/white"
-        ></Button>
+        android:textSize="18sp" />
 </RelativeLayout>

@@ -5,7 +5,12 @@
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/drawable/buttons.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/drawable/input_design.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/layout/activity_main.xml" value="0.10106382978723404" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/layout/activity_admin_add_new_product.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/layout/activity_admin_category.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/layout/activity_home.xml" value="0.12222222222222222" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/layout/activity_login.xml" value="0.10106382978723404" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCommerceTemplate/app/src/main/res/layout/activity_register.xml" value="0.18" />
       </map>
     </option>
   </component>
