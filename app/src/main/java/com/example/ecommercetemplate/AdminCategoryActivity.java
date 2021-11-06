@@ -31,7 +31,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         String[] allImagesNames = {"tShirts", "sportTShirts", "femaleDresses", "sweaters",
                 "glasses", "hatsCaps", "bagsPursesWallets", "shoes",
                 "headPhonesHandFree", "laptopsPc", "watches", "smartPhones"};
-
+ 
         for (int i = 0; i < allImages.length; i++)
         {
             String nameOfCategory = allImagesNames[i];
