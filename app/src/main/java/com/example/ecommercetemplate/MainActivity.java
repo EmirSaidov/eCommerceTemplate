@@ -81,16 +81,17 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.child("Users").child(phone).exists())
                 {
-                    Users userdata = snapshot.child("Users").child(phone).getValue(Users.class);
+                    Users userData = snapshot.child("Users").child(phone).getValue(Users.class);
 
-                    if (userdata.getPhone().equals(phone))
+                    if (userData.getPhone().equals(phone))
                     {
-                        if (userdata.getPassword().equals(password))
+                        if (userData.getPassword().equals(password))
                         {
                             Toast.makeText(MainActivity.this,"Logged in Successfully!",Toast.LENGTH_LONG).show();
                             loadingBar.dismiss();
 
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            Prevalent.currentOnlineUser = userData;
                             startActivity(intent);
                         }
                         else
