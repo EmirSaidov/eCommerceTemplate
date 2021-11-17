@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECommerceTemplate"
         tools:replace="android:theme">
-
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
         <activity
             android:name=".ProductDetailsActivity"
             android:exported="false" />
@@ -50,7 +52,6 @@
         <activity
             android:name="com.canhub.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-
     </application>
 
 </manifest>
