@@ -11,9 +11,9 @@
             android:iconTint="@color/white"
             />
         <item
-            android:id="@+id/nav_orders"
-            android:icon="@drawable/orders"
-            android:title="@string/home_orders"
+            android:id="@+id/nav_search"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/home_search"
             android:iconTint="@color/white"/>
         <item
             android:id="@+id/nav_categories"

@@ -15,6 +15,18 @@
         android:theme="@style/Theme.ECommerceTemplate"
         tools:replace="android:theme">
         <activity
+            android:name=".SearchProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminUserProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNewOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmFinalOrderActivity"
+            android:exported="false" />
+        <activity
             android:name=".CartActivity"
             android:exported="false" />
         <activity
