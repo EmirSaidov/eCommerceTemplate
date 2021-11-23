@@ -1,17 +1,16 @@
-package com.example.ecommercetemplate;
+package com.example.ecommercetemplate.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import java.lang.reflect.Array;
-import java.util.List;
+import com.example.ecommercetemplate.HomeActivity;
+import com.example.ecommercetemplate.MainActivity;
+import com.example.ecommercetemplate.R;
 
 public class AdminCategoryActivity extends AppCompatActivity {
 
@@ -19,7 +18,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
     private ImageView glasses, hatsCaps, bagsPursesWallets, shoes;
     private ImageView headPhonesHandFree, laptopsPc, watches, smartPhones;
 
-    private Button LogoutBtn, CheckOrdersBtn;
+    private Button LogoutBtn, CheckOrdersBtn, crudBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +27,16 @@ public class AdminCategoryActivity extends AppCompatActivity {
 
         LogoutBtn = (Button) findViewById(R.id.admin_logout_btn);
         CheckOrdersBtn = (Button) findViewById(R.id.check_orders_btn);
+        crudBtn = (Button) findViewById(R.id.crud_products_btn);
+
+        crudBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminCategoryActivity.this, HomeActivity.class);
+                intent.putExtra("Admin","Admin");
+                startActivity(intent);
+            }
+        });
 
         LogoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override

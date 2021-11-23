@@ -1,4 +1,4 @@
-package com.example.ecommercetemplate;
+package com.example.ecommercetemplate.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.ecommercetemplate.Model.AdminOrders;
+import com.example.ecommercetemplate.R;
 import com.example.ecommercetemplate.ViewHolder.AdminOrdersViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
