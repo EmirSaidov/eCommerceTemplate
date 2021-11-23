@@ -15,13 +15,19 @@
         android:theme="@style/Theme.ECommerceTemplate"
         tools:replace="android:theme">
         <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminCrudProductsActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminUserProductsActivity"
+            android:name=".Admin.AdminUserProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminNewOrdersActivity"
+            android:name=".Admin.AdminNewOrdersActivity"
             android:exported="false" />
         <activity
             android:name=".ConfirmFinalOrderActivity"
@@ -41,10 +47,10 @@
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.ECommerceTemplate.NoActionBar" />
         <activity
-            android:name=".AdminCategoryActivity"
+            android:name=".Admin.AdminCategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminAddNewProductActivity"
+            android:name=".Admin.AdminAddNewProductActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
