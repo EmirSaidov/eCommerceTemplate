@@ -1,4 +1,4 @@
-package com.example.ecommercetemplate;
+package com.example.ecommercetemplate.Buyer;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.canhub.cropper.CropImage;
 import com.example.ecommercetemplate.Prevalent.Prevalent;
+import com.example.ecommercetemplate.R;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -76,7 +77,7 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);
-                intent.putExtra("settings","check");
+                intent.putExtra("check","settings");
                 startActivity(intent);
             }
         });
@@ -124,7 +125,7 @@ public class SettingsActivity extends AppCompatActivity {
         ref.child(Prevalent.currentOnlineUser.getPhone()).updateChildren(userMap);
 
 
-        startActivity(new Intent(SettingsActivity.this,HomeActivity.class));
+        startActivity(new Intent(SettingsActivity.this, HomeActivity.class));
         Toast.makeText(SettingsActivity.this, "Profile Updated Successfully!", Toast.LENGTH_SHORT).show();
         finish();
     }

@@ -1,4 +1,4 @@
-package com.example.ecommercetemplate;
+package com.example.ecommercetemplate.Buyer;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.ecommercetemplate.Admin.AdminCrudProductsActivity;
 import com.example.ecommercetemplate.Model.Products;
 import com.example.ecommercetemplate.Prevalent.Prevalent;
+import com.example.ecommercetemplate.R;
 import com.example.ecommercetemplate.ViewHolder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -136,7 +137,7 @@ public class HomeActivity extends AppCompatActivity
                                 }
                                 else
                                 {
-                                    Intent intent = new Intent(HomeActivity.this,ProductDetailsActivity.class);
+                                    Intent intent = new Intent(HomeActivity.this, ProductDetailsActivity.class);
                                     intent.putExtra("pid",model.getPid());
                                     startActivity(intent);
                                 }

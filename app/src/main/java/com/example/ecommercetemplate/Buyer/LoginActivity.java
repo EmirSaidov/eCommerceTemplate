@@ -1,4 +1,4 @@
-package com.example.ecommercetemplate;
+package com.example.ecommercetemplate.Buyer;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.ecommercetemplate.Admin.AdminCategoryActivity;
 import com.example.ecommercetemplate.Model.Users;
 import com.example.ecommercetemplate.Prevalent.Prevalent;
+import com.example.ecommercetemplate.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -59,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
-                intent.putExtra("login","check");
+                intent.putExtra("check","login");
                 startActivity(intent);
             }
         });

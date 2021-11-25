@@ -1,4 +1,4 @@
-package com.example.ecommercetemplate;
+package com.example.ecommercetemplate.Buyer;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.example.ecommercetemplate.Model.Products;
 import com.example.ecommercetemplate.Prevalent.Prevalent;
+import com.example.ecommercetemplate.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -21,7 +22,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.rey.material.widget.FloatingActionButton;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
@@ -113,7 +113,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
                                             {
                                                 Toast.makeText(ProductDetailsActivity.this, "Added to Cart", Toast.LENGTH_SHORT).show();
 
-                                                Intent intent = new Intent(ProductDetailsActivity.this,HomeActivity.class);
+                                                Intent intent = new Intent(ProductDetailsActivity.this, HomeActivity.class);
                                                 startActivity(intent);
                                             }
                                         }

@@ -15,13 +15,19 @@
         android:theme="@style/Theme.ECommerceTemplate"
         tools:replace="android:theme">
         <activity
-            android:name=".ResetPasswordActivity"
+            android:name=".Seller.SellerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.SellerRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.ResetPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".Admin.AdminCrudProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchProductsActivity"
+            android:name=".Buyer.SearchProductsActivity"
             android:exported="false" />
         <activity
             android:name=".Admin.AdminUserProductsActivity"
@@ -30,19 +36,19 @@
             android:name=".Admin.AdminNewOrdersActivity"
             android:exported="false" />
         <activity
-            android:name=".ConfirmFinalOrderActivity"
+            android:name=".Buyer.ConfirmFinalOrderActivity"
             android:exported="false" />
         <activity
-            android:name=".CartActivity"
+            android:name=".Buyer.CartActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductDetailsActivity"
+            android:name=".Buyer.ProductDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".Buyer.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".Buyer.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.ECommerceTemplate.NoActionBar" />
@@ -53,13 +59,13 @@
             android:name=".Admin.AdminAddNewProductActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Buyer.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Buyer.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Buyer.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
