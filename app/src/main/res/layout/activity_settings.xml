@@ -25,7 +25,7 @@
                     android:id="@+id/close_settings_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Close"
+                    android:text="@string/close"
                     android:textColor="@color/white"
                     android:textSize="17sp"
                     android:textStyle="bold"
@@ -35,11 +35,11 @@
                     android:id="@+id/update_account_settings_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Update"
+                    android:text="@string/update"
                     android:textColor="@color/white"
                     android:textSize="17sp"
                     android:textStyle="bold"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_alignParentEnd="true"/>
 
             </RelativeLayout>
@@ -61,11 +61,11 @@
         android:id="@+id/profile_image_change_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Profile Image"
+        android:text="@string/change_profile_image"
         android:textSize="17sp"
         android:textStyle="bold"
         android:layout_marginTop="4dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:textColor="@color/black"
         android:layout_below="@id/settings_profile_image"
         android:layout_centerHorizontal="true"/>
@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/profile_image_change_btn"
-        android:hint="Enter your Phone Number"
+        android:hint="@string/enter_your_phone_number"
         android:layout_margin="15dp"
         android:padding="10dp"/>
 
@@ -84,7 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/settings_phone_number"
-        android:hint="Enter your Full Name"
+        android:hint="@string/enter_your_full_name"
         android:layout_margin="15dp"
         android:padding="10dp"/>
 
@@ -93,7 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/settings_full_name"
-        android:hint="Enter your Address"
+        android:hint="@string/enter_your_address"
         android:layout_margin="15dp"
         android:padding="10dp"/>
 
@@ -102,7 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/settings_address"
-        android:text="Set Security Questions"
+        android:text="@string/set_security_questions"
         android:background="@color/design_default_color_primary"
         android:textColor="@color/white"
         android:layout_margin="15dp"
