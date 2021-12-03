@@ -20,8 +20,8 @@
             android:id="@+id/search_product_name"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:hint="Product Name"
-            android:textSize="18dp"
+            android:hint="@string/product_name"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:background="@color/white"
             android:padding="9dp"
@@ -34,14 +34,14 @@
             android:id="@+id/search_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search"
+            android:text="@string/search"
             android:textColor="@color/white"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:layout_centerInParent="true"
             android:padding="9dp"
             android:textStyle="bold"
             android:background="@color/design_default_color_primary_dark"
-            android:layout_toRightOf="@id/search_product_name"
+            android:layout_toEndOf="@id/search_product_name"
             />
     </RelativeLayout>
 

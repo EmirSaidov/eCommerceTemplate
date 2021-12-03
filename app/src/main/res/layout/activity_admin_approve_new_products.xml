@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Admin.AdminUserProductsActivity">
+    tools:context=".Admin.AdminApproveNewProducts">
 
     <RelativeLayout
-        android:id="@+id/rel_lay_admin_userP"
+        android:id="@+id/rel_lay_approve"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/design_default_color_primary_dark"
@@ -17,9 +18,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/products"
+            android:text="@string/approve_new_products"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
             />
@@ -27,13 +28,12 @@
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/products_list"
+        android:id="@+id/admin_approve_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/rel_lay_admin_userP"
+        android:layout_below="@+id/rel_lay_approve"
         >
 
 
     </androidx.recyclerview.widget.RecyclerView>
-
 </RelativeLayout>

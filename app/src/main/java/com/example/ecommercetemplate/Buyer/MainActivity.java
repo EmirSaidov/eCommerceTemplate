@@ -15,7 +15,10 @@ import android.widget.Toast;
 import com.example.ecommercetemplate.Model.Users;
 import com.example.ecommercetemplate.Prevalent.Prevalent;
 import com.example.ecommercetemplate.R;
+import com.example.ecommercetemplate.Seller.SellerHomeActivity;
 import com.example.ecommercetemplate.Seller.SellerRegistrationActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -81,6 +84,21 @@ public class MainActivity extends AppCompatActivity {
                 loadingBar.setCanceledOnTouchOutside(false);
                 loadingBar.show();
             }
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        if(firebaseUser != null)
+        {
+            Intent intent = new Intent(MainActivity.this, SellerHomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
         }
     }
 

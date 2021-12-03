@@ -10,8 +10,8 @@
         android:id="@+id/txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please enter your Shipment Details"
-        android:textSize="18dp"
+        android:text="@string/please_enter_your_shipment_details"
+        android:textSize="18sp"
         android:textColor="@color/design_default_color_primary_dark"
         android:layout_margin="25dp"
         android:textAlignment="center"
@@ -26,7 +26,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Enter Your Name"
+        android:hint="@string/enter_your_name"
         />
 
     <EditText
@@ -38,8 +38,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:inputType="number"
-        android:hint="Enter Your Phone Number"
-        />
+        android:hint="@string/enter_your_phone_number"
+        tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/shipment_address"
@@ -49,7 +49,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Enter Your Address"
+        android:hint="@string/enter_your_address"
         />
 
     <EditText
@@ -60,7 +60,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Enter Your City"
+        android:hint="@string/enter_your_city"
         />
 
     <Button
@@ -69,10 +69,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:text="Confirm"
+        android:text="@string/confirm"
         android:background="@color/design_default_color_primary_dark"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         />
 
 </RelativeLayout>
